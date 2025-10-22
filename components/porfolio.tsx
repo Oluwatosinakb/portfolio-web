@@ -26,12 +26,12 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    title: "CoinTracker: Crypto Portfolio Tracker",
-    description: "The CoinTracker portfolio was developed using the CoinGecko API. It allows users to monitor cryptocurrency prices, track market performance, and discover trending coins in real time.",
-    image: "/cointracker.png", 
-    demoUrl: "https://bespoke-frangollo-f5990b.netlify.app/",
-    githubUrl: "https://github.com/Oluwatosinakb/Cointracker.git",
-    technologies: ["HTML", "CSS", "Javascript", "CoinGecko API"]
+    title: "Ethnocentrique",
+    description: "The Ethnocentrique website is a cultural platform that celebrates diversity and promotes understanding among different ethnic groups. It features articles, events, and resources to foster cultural exchange.",
+    image: "/ethnocentrique.png", 
+    demoUrl: "https://ethno-staging.vercel.app/",
+    githubUrl: "https://github.com/Oluwatosinakb/ethnocentrique-web.git",
+    technologies: ["Next.js", "Typescript", "React", "Tailwind CSS", "Framer Motion"]
   },
   {
     id: 3,

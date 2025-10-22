@@ -25,17 +25,26 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${jetBrains_Mono.className} bg-white dark:bg-navy text-gray-900 dark:text-gray-100 transition-colors`}>
-        <Navbar />
-        <main>
-          <Hero />
-          <About />
-          <Services />
-          <Portfolio />
-          <Footer />
-          {children}</main>
+  <head>
+    <meta name="color-scheme" content="light dark" />
+  </head>
+  <body
+    className={`${jetBrains_Mono.className}
+      bg-white text-gray-900
+      dark:bg-[#0f172a] dark:text-gray-100
+      transition-colors duration-300`}
+  >
+    <Navbar />
+    <main>
+      <Hero />
+      <About />
+      <Services />
+      <Portfolio />
+      <Footer />
+      {children}
+    </main>
+  </body>
+</html>
 
-      </body>
-    </html>
   )
 }
