@@ -18,44 +18,52 @@ const projects: Project[] = [
   {
     id: 1,
     title: "Digitaley Drive official website",
-    description: "The official website for Digitaley Drive is a comprehensive platform that connects users with the Digitaley Drive ecosystem. It also features a Learning Management System (LMS) where students can access assignments and course curricula.",
-    image: "/digitaleydrive-project.png", 
+    description:
+      "The official website for Digitaley Drive is a comprehensive platform that connects users with the Digitaley Drive ecosystem. It also features a Learning Management System (LMS) where students can access assignments and course curricula.",
+    image: "/digitaleydrive-project.png",
     demoUrl: "https://digitaley-drive-frontend-zeta.vercel.app/",
     githubUrl: "https://github.com/Oluwatosinakb/digitaley-drive-frontend",
-    technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript"]
+    technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
   },
   {
     id: 2,
     title: "Ethnocentrique",
-    description: "The Ethnocentrique website is a cultural platform that celebrates diversity and promotes understanding among different ethnic groups. It features articles, events, and resources to foster cultural exchange.",
-    image: "/ethnocentrique.png", 
+    description:
+      "The Ethnocentrique website is a cultural platform that celebrates diversity and promotes understanding among different ethnic groups. It features articles, events, and resources to foster cultural exchange.",
+    image: "/ethnocentrique.png",
     demoUrl: "https://ethno-staging.vercel.app/",
     githubUrl: "https://github.com/Oluwatosinakb/ethnocentrique-web.git",
-    technologies: ["Next.js", "Typescript", "React", "Tailwind CSS", "Framer Motion"]
+    technologies: ["Next.js", "Typescript", "React", "Tailwind CSS", "Framer Motion"],
   },
   {
     id: 3,
     title: "CARA: An E-commerce website",
-    description: "The CARA e-commerce website UI was designed to provide a smooth and modern shopping experience. It includes features like product listings, detailed product pages, a shopping cart, and a checkout flow.",
-    image: "/CARA.png", 
-    demoUrl: "https://682b999701550a1afcc472a3--soft-pithivier-ab34a5.netlify.app/",
+    description:
+      "The CARA e-commerce website UI was designed to provide a smooth and modern shopping experience. It includes features like product listings, detailed product pages, a shopping cart, and a checkout flow.",
+    image: "/CARA.png",
+    demoUrl:
+      "https://682b999701550a1afcc472a3--soft-pithivier-ab34a5.netlify.app/",
     githubUrl: "https://github.com/Oluwatosinakb/E-commerce.git",
-    technologies: ["HTML", "CSS", "Javascript"]
+    technologies: ["HTML", "CSS", "Javascript"],
   },
   {
     id: 4,
     title: "Data dashboard",
-    description: "A responsive data dashboard that provides an overview of key metrics and insights. It features interactive charts, tables, and filters to help users analyze data effectively.",
-    image: "/Dashboard-project.png", 
+    description:
+      "A responsive data dashboard that provides an overview of key metrics and insights. It features interactive charts, tables, and filters to help users analyze data effectively.",
+    image: "/Dashboard-project.png",
     demoUrl: "https://digitaley-drive-dashboard-z7ws.vercel.app/",
     githubUrl: "https://github.com/Oluwatosinakb/digitaley-drive-dashboard",
-    technologies: ["Next.js", "Tailwind CSS", "Typescript"]
-  }
+    technologies: ["Next.js", "Tailwind CSS", "Typescript"],
+  },
 ];
 
 const Portfolio = () => {
   return (
-    <section id='portfolio' className="w-full py-20 px-4 md:px-10 lg:px-20 bg-background">
+    <section
+      id="portfolio"
+      className="w-full py-20 px-4 md:px-10 lg:px-20 bg-background"
+    >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div
@@ -67,7 +75,8 @@ const Portfolio = () => {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">My Projects</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Here are some of my recent works that showcase my skills and passion for development.
+            Here are some of my recent works that showcase my skills and passion
+            for development.
           </p>
         </motion.div>
 
@@ -82,33 +91,49 @@ const Portfolio = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group relative bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              {/* Project Image */}
+              {/* ✅ Project Image - mobile and desktop logic */}
               <div className="relative h-48 overflow-hidden">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                
-                {/* Hover Overlay with Icons */}
-                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors"
-                  >
-                    <FaGithub className="text-white text-xl" />
-                  </a>
-                  <a
-                    href={project.demoUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors"
-                  >
-                    <FaExternalLinkAlt className="text-white text-xl" />
-                  </a>
+                {/* Mobile: image links directly to demo */}
+                <a
+                  href={project.demoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block md:hidden h-full w-full"
+                >
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover transition-transform duration-300"
+                  />
+                </a>
+
+                {/* Desktop: hover overlay */}
+                <div className="hidden md:block relative h-full">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-3 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors"
+                    >
+                      <FaGithub className="text-white text-xl" />
+                    </a>
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-3 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors"
+                    >
+                      <FaExternalLinkAlt className="text-white text-xl" />
+                    </a>
+                  </div>
                 </div>
               </div>
 
@@ -120,7 +145,7 @@ const Portfolio = () => {
                 <p className="text-muted-foreground text-sm mb-4 line-clamp-8">
                   {project.description}
                 </p>
-                
+
                 {/* Technologies */}
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, techIndex) => (
