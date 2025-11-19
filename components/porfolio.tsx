@@ -48,10 +48,10 @@ const projects: Project[] = [
   },
   {
     id: 4,
-    title: "Data dashboard",
+    title: "Neukleos website",
     description:
-      "A responsive data dashboard that provides an overview of key metrics and insights. It features interactive charts, tables, and filters to help users analyze data effectively.",
-    image: "/Dashboard-project.png",
+      "Development and design of the official website for Neukleos, a modern marketing agency. The site serves as a key informational hub, showcasing their full suite of digital solutions—including SEO, content marketing, and web development—that help businesses enhance their online presence and achieve measurable growth.",
+    image: "/Neukleos-website.png",
     demoUrl: "https://digitaley-drive-dashboard-z7ws.vercel.app/",
     githubUrl: "https://github.com/Oluwatosinakb/digitaley-drive-dashboard",
     technologies: ["Next.js", "Tailwind CSS", "Typescript"],
