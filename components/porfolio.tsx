@@ -52,8 +52,8 @@ const projects: Project[] = [
     description:
       "Development and design of the official website for Neukleos, a modern marketing agency. The site serves as a key informational hub, showcasing their full suite of digital solutions—including SEO, content marketing, and web development—that help businesses enhance their online presence and achieve measurable growth.",
     image: "/Neukleos-website.png",
-    demoUrl: "https://digitaley-drive-dashboard-z7ws.vercel.app/",
-    githubUrl: "https://github.com/Oluwatosinakb/digitaley-drive-dashboard",
+    demoUrl: "https://nuekleos-web-yw2j.vercel.app/",
+    githubUrl: "https://github.com/Oluwatosinakb/nuekleos-website.git",
     technologies: ["Next.js", "Tailwind CSS", "Typescript"],
   },
 ];
