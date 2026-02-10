@@ -37,6 +37,17 @@ const projects: Project[] = [
   },
   {
     id: 3,
+    title: "Image and Time",
+    description:
+      "The Image & Time website is a portfolio platform that showcases the agency’s expertise in design, advertising, and digital innovation. It highlights their work, approach, and impact in helping brands connect with audiences and stand out in a competitive market.",
+    image: "/image-and-time.png",
+    demoUrl:
+      "https://imageandtime-web.vercel.app/",
+    githubUrl: "https://github.com/Oluwatosinakb/imageandtime-web.git",
+    technologies: ["Next.js", "Typescript", "Tailwind CSS", "Framer Motion"],
+  },
+  {
+    id: 4,
     title: "CARA: An E-commerce website",
     description:
       "The CARA e-commerce website UI was designed to provide a smooth and modern shopping experience. It includes features like product listings, detailed product pages, a shopping cart, and a checkout flow.",
@@ -47,7 +58,7 @@ const projects: Project[] = [
     technologies: ["HTML", "CSS", "Javascript"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Neukleos website",
     description:
       "Development and design of the official website for Neukleos, a modern marketing agency. The site serves as a key informational hub, showcasing their full suite of digital solutions—including SEO, content marketing, and web development—that help businesses enhance their online presence and achieve measurable growth.",
