@@ -73,7 +73,7 @@ const Hero = () => {
             className="pt-2"
           >
             <a
-              href="/Oluwatosin-AkinbobolaCV.pdf"
+              href="/Oluwatosin_Akinbobola_CV.pdf"
               download="Oluwatosin-AkinbobolaCV.pdf"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg font-medium transition-colors"
             >

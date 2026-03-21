@@ -42,7 +42,7 @@ const projects: Project[] = [
       "The Image & Time website is a portfolio platform that showcases the agency’s expertise in design, advertising, and digital innovation. It highlights their work, approach, and impact in helping brands connect with audiences and stand out in a competitive market.",
     image: "/image-and-time.png",
     demoUrl:
-      "https://imageandtime-web.vercel.app/",
+      "https://www.imageandtime.com/",
     githubUrl: "https://github.com/Oluwatosinakb/imageandtime-web.git",
     technologies: ["Next.js", "Typescript", "Tailwind CSS", "Framer Motion"],
   },
