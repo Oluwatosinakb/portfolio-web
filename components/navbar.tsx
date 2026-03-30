@@ -69,7 +69,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="w-full px-6 py-4 bg-white dark:bg-slate-900 text-gray-900 dark:text-gray-100 sticky top-0 z-50 transition-colors duration-300">
+    <header className="w-full px-6 py-4 bg-white text-gray-900 sticky top-0 z-50 transition-colors duration-300">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-blue-600 dark:text-blue-400 transition-colors">

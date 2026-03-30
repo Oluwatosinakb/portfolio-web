@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        navy: "#0f172a", // Navy-style dark background
+        navy: "white", // Navy-style dark background
       },
     },
   },

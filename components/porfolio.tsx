@@ -17,13 +17,13 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Digitaley Drive official website",
+    title: "Lagos games week website",
     description:
-      "The official website for Digitaley Drive is a comprehensive platform that connects users with the Digitaley Drive ecosystem. It also features a Learning Management System (LMS) where students can access assignments and course curricula.",
-    image: "/digitaleydrive-project.png",
-    demoUrl: "https://digitaley-drive-frontend-zeta.vercel.app/",
-    githubUrl: "https://github.com/Oluwatosinakb/digitaley-drive-frontend",
-    technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
+      "Lagos Games Week is an annual premier conference and exhibition dedicated to growing the African video games industry. Held in Lagos, Nigeria, it connects creators, investors, and industry leaders through panels, tournaments (like GamrX), and pitching sessions, aiming to build a $100 million gaming ecosystem.",
+    image: "/lagos-games-week.png",
+    demoUrl: "https://lagosgamesweek.com/",
+    githubUrl: "https://github.com/Oluwatosinakb/lagos-game-week.git",
+    technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Framer Motion"],
   },
   {
     id: 2,
@@ -66,6 +66,16 @@ const projects: Project[] = [
     demoUrl: "https://nuekleos-web-yw2j.vercel.app/",
     githubUrl: "https://github.com/Oluwatosinakb/nuekleos-website.git",
     technologies: ["Next.js", "Tailwind CSS", "Typescript"],
+  },
+  {
+    id: 6,
+    title: "Digitaley Drive official website",
+    description:
+      "The official website for Digitaley Drive is a comprehensive platform that connects users with the Digitaley Drive ecosystem. It also features a Learning Management System (LMS) where students can access assignments and course curricula.",
+    image: "/digitaleydrive-project.png",
+    demoUrl: "https://digitaley-drive-frontend-zeta.vercel.app/",
+    githubUrl: "https://github.com/Oluwatosinakb/digitaley-drive-frontend",
+    technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
   },
 ];
 

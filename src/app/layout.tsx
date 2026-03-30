@@ -7,6 +7,7 @@ import About from '../../components/about'
 import Services from '../../components/services'
 import Portfolio from '../../components/porfolio'
 import Footer from '../../components/footer'
+import SmoothScroll from '../../components/smooth-scroll'
 
 const jetBrains_Mono = JetBrains_Mono({
   subsets: ['latin'],
@@ -35,10 +36,10 @@ export default function RootLayout({
       </head>
       <body
         className={`${jetBrains_Mono.className}
-          bg-white text-gray-900
-          dark:bg-[#0f172a] dark:text-gray-100
+          bg-white text-black
           transition-colors duration-300`}
       >
+        <SmoothScroll>
         <Navbar />
         <main>
           <Hero />
@@ -48,6 +49,7 @@ export default function RootLayout({
           <Footer />
           {children}
         </main>
+        </SmoothScroll>
       </body>
     </html>
   )

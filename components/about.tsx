@@ -11,7 +11,7 @@ export default function About() {
 
       {/* Full-width Intro Paragraph */}
       <div className="mb-16">
-       <p className="text-base md:text-lg lg:text-xl font-medium text-black dark:text-white leading-relaxed">
+       <p className="text-base md:text-lg lg:text-xl font-medium text-black leading-relaxed">
           I'm a frontend developer with 3 years of experience, dedicated to building web applications that not only meet client needs but also deliver exceptional user experiences.
        </p>
 
@@ -28,11 +28,11 @@ export default function About() {
 
         {/* Right Column */}
         <div className="space-y-6">
-          <p className="text-gray-700 dark:text-gray-300 text-base leading-relaxed">
+          <p className="text-black text-base leading-relaxed">
             With years of experience in frontend development, I have honed the skills to understand client requirements and deliver solutions aligned with the latest trends. I've collaborated with businesses across various industries, making me a reliable partner for your project.
           </p>
 
-          <p className="text-gray-500 dark:text-gray-400 text-base leading-relaxed">
+          <p className="text-black text-base leading-relaxed">
             I've spent most of these years working in areas like responsive web applications, landing pages, interactive components, and app UI/UX, to my current role focusing on creating seamless user experiences for web platforms. Having contributed to numerous live projects, I can offer valuable suggestions and innovative ideas to move forward with. With me, you're not limited to a single approach; I provide a range of options that we can refine together to achieve the best results.
           </p>
         </div>
