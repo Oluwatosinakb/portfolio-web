@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { JetBrains_Mono } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react'
 import Navbar from '../../components/navbar'
 import Hero from '../../components/hero'
 import About from '../../components/about'
@@ -49,6 +50,7 @@ export default function RootLayout({
           <Footer />
           {children}
         </main>
+        <Analytics />
         </SmoothScroll>
       </body>
     </html>
