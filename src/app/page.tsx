@@ -1,8 +1,17 @@
+import Hero from '../../components/hero'
+import About from '../../components/about'
+import Services from '../../components/services'
+import Portfolio from '../../components/porfolio'
+import Footer from '../../components/footer'
+
 export default function Home() {
   return (
-    <main className="">
-      <h1 className=""></h1>
-      <p className=""></p>
+    <main>
+      <Hero />
+      <About />
+      <Services />
+      <Portfolio />
+      <Footer />
     </main>
-  );
+  )
 }

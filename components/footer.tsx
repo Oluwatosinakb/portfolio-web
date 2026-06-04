@@ -161,7 +161,7 @@ const Footer = () => {
           className="mt-16 pt-8 border-t border-border/40"
         >
           <p className="text-muted-foreground text-sm">
-            © 2025 Oluwatosin. All rights reserved.
+            © 2026 Oluwatosin. All rights reserved.
           </p>
         </motion.div>
       </div>
