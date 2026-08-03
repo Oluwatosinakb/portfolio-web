@@ -51,7 +51,7 @@ const Navbar = () => {
   // Prevent hydration mismatch
   if (!mounted) {
     return (
-      <header className="w-full px-6 py-4 bg-white sticky top-0 z-50">
+      <header className="w-full px-6 py-4 backdrop-blur-[30px] sticky top-0 z-50">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="text-2xl font-bold text-blue-600">/OA</div>
           <div className="hidden md:flex gap-6 items-center">Loading...</div>
@@ -69,7 +69,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="w-full px-6 py-4 bg-white text-gray-900 sticky top-0 z-50 transition-colors duration-300">
+    <header className="w-full px-6 py-4 backdrop-blur-[30px] sticky top-0 z-50 transition-colors duration-300">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-blue-600 dark:text-blue-400 transition-colors">
@@ -101,7 +101,7 @@ const Navbar = () => {
 
       {/* Mobile Nav Menu */}
       {menuOpen && (
-        <div className="md:hidden flex flex-col mt-4 space-y-4 bg-white dark:bg-slate-900 p-4 rounded-lg shadow-lg border dark:border-gray-700 transition-all duration-300">
+        <div className="md:hidden flex flex-col mt-4 space-y-4 backdrop-blur-[30px] bg-white/80 dark:bg-slate-900/80 p-4 rounded-lg shadow-lg border dark:border-gray-700 transition-all duration-300">
           {navLinks.map((link) => (
             <Link
               key={link.name}

@@ -4,3 +4,19 @@ html {
   transition: background-color 0.3s ease, color 0.3s ease;
   scroll-behavior: smooth;
 }
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.035) 0px,
+    rgba(0, 0, 0, 0.035) 1px,
+    transparent 1px,
+    transparent 10px
+  );
+}

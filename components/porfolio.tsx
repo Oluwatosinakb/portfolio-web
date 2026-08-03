@@ -17,6 +17,15 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
+    title: "Kucheza Gaming Website",
+    description:
+      "A modern website for Kucheza Gaming, an Africa-based game studio promoting culture through video games, showcasing its games, services, partnerships, and initiatives with an immersive user experience.",
+    image: "/kucheza.png",
+    caseStudyUrl: "/projects/kucheza",
+    technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Framer Motion"],
+  },
+  {
+    id: 2,
     title: "Lagos games week website",
     description:
       "Lagos Games Week is an annual premier conference and exhibition dedicated to growing the African video games industry. Held in Lagos, Nigeria, it connects creators, investors, and industry leaders through panels, tournaments (like GamrX), and pitching sessions, aiming to build a $100 million gaming ecosystem.",
@@ -25,7 +34,7 @@ const projects: Project[] = [
     technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Framer Motion"],
   },
   {
-    id: 2,
+    id: 3,
     title: "Ethnocentrique",
     description:
       "The Ethnocentrique website is a cultural platform that celebrates diversity and promotes understanding among different ethnic groups. It features articles, events, and resources to foster cultural exchange.",
@@ -34,7 +43,7 @@ const projects: Project[] = [
     technologies: ["Next.js", "Typescript", "React", "Tailwind CSS", "Framer Motion"],
   },
   {
-    id: 3,
+    id: 4,
     title: "Image and Time",
     description:
       "The Image & Time website is a portfolio platform that showcases the agency’s expertise in design, advertising, and digital innovation. It highlights their work, approach, and impact in helping brands connect with audiences and stand out in a competitive market.",
@@ -43,7 +52,7 @@ const projects: Project[] = [
     technologies: ["Next.js", "Typescript", "Tailwind CSS", "Framer Motion"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Image and time-2",
     description:
       "The Image & Time website is a portfolio platform that showcases the agency’s expertise in design, advertising, and digital innovation. It highlights their work, approach, and impact in helping brands connect with audiences and stand out in a competitive market.",
@@ -52,7 +61,7 @@ const projects: Project[] = [
     technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Framer Motion"],
   },
   {
-    id: 5,
+    id: 6,
     title: "Neukleos website",
     description:
       "Development and design of the official website for Neukleos, a modern marketing agency. The site serves as a key informational hub, showcasing their full suite of digital solutions—including SEO, content marketing, and web development—that help businesses enhance their online presence and achieve measurable growth.",
@@ -60,29 +69,29 @@ const projects: Project[] = [
     caseStudyUrl: "/projects/neukleos",
     technologies: ["Next.js", "Tailwind CSS", "Typescript"],
   },
-  
+
   {
-    id: 6,
+    id: 7,
     title: "CINE SCOPE: A Content explorer",
     description:
-       "A personal movie discovery app powered by the TMDB API. Browse and explore thousands of titles, filter by genre, and sort by popularity, rating, or release date — all from a clean, fast interface.",
+      "A personal movie discovery app powered by the TMDB API. Browse and explore thousands of titles, filter by genre, and sort by popularity, rating, or release date — all from a clean, fast interface.",
     image: "/Cine-scope.png",
     caseStudyUrl: "/projects/Cine-Scope",
     technologies: ["NextJS", "Typescript", "Tailwind CSS", "TMDB API"],
   },
 
   {
-    id: 7,
+    id: 8,
     title: "3tabs consulting",
-    description: 
-       "Official website for Three Tabs Consult Ltd, a Lagos-based ICT solutions company with 10+ years of experience. The site covers their full range of services — networking, device repairs, electronics sales, and security camera integration — with a clean, professional design.",
+    description:
+      "Official website for Three Tabs Consult Ltd, a Lagos-based ICT solutions company with 10+ years of experience. The site covers their full range of services — networking, device repairs, electronics sales, and security camera integration — with a clean, professional design.",
     image: "/3tabs.png",
     caseStudyUrl: "/projects/3tabs",
     technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
   },
 
   {
-    id: 8,
+    id: 9,
     title: "Digitaley Drive official website",
     description:
       "The official website for Digitaley Drive is a comprehensive platform that connects users with the Digitaley Drive ecosystem. It also features a Learning Management System (LMS) where students can access assignments and course curricula.",
@@ -90,6 +99,7 @@ const projects: Project[] = [
     caseStudyUrl: "#",
     technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
   },
+
 ];
 
 const Portfolio = () => {
