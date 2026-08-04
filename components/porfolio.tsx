@@ -43,7 +43,7 @@ const projects: Project[] = [
     image: "/sulmot.png",
     liveUrl: "https://sulmot.ng", 
     githubUrl: "https://github.com/Oluwatosinakb/Sulmot",
-    technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Framer Motion"],
+    technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Framer Motion", "neon","postgresql", "prisma"],
   },
   {
     id: 4,
