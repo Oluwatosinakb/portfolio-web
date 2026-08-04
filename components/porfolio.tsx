@@ -9,8 +9,8 @@ interface Project {
   title: string;
   description: string;
   image: string;
-  liveUrl?: string;   
-  githubUrl?: string; 
+  liveUrl?: string;
+  githubUrl?: string;
   technologies: string[];
 }
 
@@ -31,7 +31,7 @@ const projects: Project[] = [
     description:
       "Lagos Games Week is an annual premier conference and exhibition dedicated to growing the African video games industry. Held in Lagos, Nigeria, it connects creators, investors, and industry leaders through panels, tournaments (like GamrX), and pitching sessions, aiming to build a $100 million gaming ecosystem.",
     image: "/lagos-games-week.png",
-    liveUrl: "https://lagosgamesweek.com/", 
+    liveUrl: "https://lagosgamesweek.com/",
     githubUrl: "https://github.com/Oluwatosinakb/LGW",
     technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Framer Motion"],
   },
@@ -41,9 +41,9 @@ const projects: Project[] = [
     description:
       "A modern corporate website for Sulmot, designed to showcase the company's products, services, and industry expertise through a clean, responsive, and user-friendly digital experience that strengthens its online presence.",
     image: "/sulmot.png",
-    liveUrl: "https://sulmot.ng", 
+    liveUrl: "https://sulmot.ng",
     githubUrl: "https://github.com/Oluwatosinakb/Sulmot",
-    technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Framer Motion", "neon","postgresql", "prisma"],
+    technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Framer Motion", "neon", "postgresql", "prisma"],
   },
   {
     id: 4,
@@ -51,7 +51,7 @@ const projects: Project[] = [
     description:
       "The Ethnocentrique website is a cultural platform that celebrates diversity and promotes understanding among different ethnic groups. It features articles, events, and resources to foster cultural exchange.",
     image: "/ethnocentrique.png",
-    liveUrl: "https://ethnocentrique.com", 
+    liveUrl: "https://ethnocentrique.com",
     githubUrl: "https://github.com/Oluwatosinakb/ethnocentrique",
     technologies: ["Next.js", "Typescript", "React", "Tailwind CSS", "Framer Motion"],
   },
@@ -61,7 +61,7 @@ const projects: Project[] = [
     description:
       "The Image & Time website is a portfolio platform that showcases the agency’s expertise in design, advertising, and digital innovation. It highlights their work, approach, and impact in helping brands connect with audiences and stand out in a competitive market.",
     image: "/image-and-time.png",
-    liveUrl: "https://imageandtime-web-seven.vercel.app/", 
+    liveUrl: "https://imageandtime-web-seven.vercel.app/",
     githubUrl: "https://github.com/Oluwatosinakb/imageandtime-1",
     technologies: ["Next.js", "Typescript", "Tailwind CSS", "Framer Motion"],
   },
@@ -71,7 +71,7 @@ const projects: Project[] = [
     description:
       "The Image & Time website is a portfolio platform that showcases the agency’s expertise in design, advertising, and digital innovation. It highlights their work, approach, and impact in helping brands connect with audiences and stand out in a competitive market.",
     image: "/image-and-time-2.png",
-    liveUrl: "https://imageandtime.com", 
+    liveUrl: "https://imageandtime.com",
     githubUrl: "https://github.com/Oluwatosinakb/imageandtime-new",
     technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Framer Motion"],
   },
@@ -81,7 +81,7 @@ const projects: Project[] = [
     description:
       "Development and design of the official website for Neukleos, a modern marketing agency. The site serves as a key informational hub, showcasing their full suite of digital solutions—including SEO, content marketing, and web development—that help businesses enhance their online presence and achieve measurable growth.",
     image: "/neukleos-2.png",
-    liveUrl: "https://neukleos.com", 
+    liveUrl: "https://neukleos.com",
     githubUrl: "https://github.com/Oluwatosinakb/Neukleos",
     technologies: ["Next.js", "Tailwind CSS", "Typescript"],
   },
@@ -91,8 +91,8 @@ const projects: Project[] = [
     description:
       "A personal movie discovery app powered by the TMDB API. Browse and explore thousands of titles, filter by genre, and sort by popularity, rating, or release date — all from a clean, fast interface.",
     image: "/Cine-scope.png",
-    liveUrl: "https://frontend-assessment-oluwatosin.vercel.app/movies", 
-    githubUrl: "https://github.com/Oluwatosinakb/frontend-assessment-oluwatosin", 
+    liveUrl: "https://frontend-assessment-oluwatosin.vercel.app/movies",
+    githubUrl: "https://github.com/Oluwatosinakb/frontend-assessment-oluwatosin",
     technologies: ["NextJS", "Typescript", "Tailwind CSS", "TMDB API"],
   },
   {
@@ -101,7 +101,7 @@ const projects: Project[] = [
     description:
       "Official website for Three Tabs Consult Ltd, a Lagos-based ICT solutions company with 10+ years of experience. The site covers their full range of services — networking, device repairs, electronics sales, and security camera integration — with a clean, professional design.",
     image: "/3tabs.png",
-    liveUrl: "https://3tabs.ng", 
+    liveUrl: "https://3tabs.ng",
     githubUrl: "https://github.com/Oluwatosinakb/3tabsconsulting",
     technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
   },
@@ -111,8 +111,8 @@ const projects: Project[] = [
     description:
       "The official website for Digitaley Drive is a comprehensive platform that connects users with the Digitaley Drive ecosystem. It also features a Learning Management System (LMS) where students can access assignments and course curricula.",
     image: "/digitaleydrive-project.png",
-    liveUrl: "https://digitaleydrive.com", 
-    githubUrl: "https://github.com/Oluwatosinakb/DigitaleyDrive", 
+    liveUrl: "https://digitaleydrive.com",
+    githubUrl: "https://github.com/Oluwatosinakb/DigitaleyDrive",
     technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
   },
 ];
@@ -146,7 +146,17 @@ const Portfolio = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group relative h-full bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+              onClick={() => {
+                // Mobile has no hover, so tapping the card opens the live site directly.
+                // On desktop the same click also fires, but the hover icons (below)
+                // stop their own clicks from bubbling here, so they behave independently.
+                if (project.liveUrl) {
+                  window.open(project.liveUrl, '_blank', 'noopener,noreferrer');
+                }
+              }}
+              className={`group relative h-full bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 ${
+                project.liveUrl ? 'cursor-pointer' : ''
+              }`}
             >
               <div className="relative h-48 overflow-hidden">
                 <Image
@@ -163,6 +173,7 @@ const Portfolio = () => {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
                       aria-label={`View live demo of ${project.title}`}
                       title="Live demo"
                       className="flex items-center justify-center w-11 h-11 rounded-full bg-white text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
@@ -175,6 +186,7 @@ const Portfolio = () => {
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
                       aria-label={`View GitHub repo for ${project.title}`}
                       title="GitHub repo"
                       className="flex items-center justify-center w-11 h-11 rounded-full bg-white text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
