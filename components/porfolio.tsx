@@ -147,9 +147,7 @@ const Portfolio = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               onClick={() => {
-                // Mobile has no hover, so tapping the card opens the live site directly.
-                // On desktop the same click also fires, but the hover icons (below)
-                // stop their own clicks from bubbling here, so they behave independently.
+                
                 if (project.liveUrl) {
                   window.open(project.liveUrl, '_blank', 'noopener,noreferrer');
                 }
@@ -163,6 +161,7 @@ const Portfolio = () => {
                   src={project.image}
                   alt={project.title}
                   fill
+                  unoptimized
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
 
